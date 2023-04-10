@@ -1,4 +1,4 @@
-pip install runpod
+pip install runpod requests
 wget https://raw.githubusercontent.com/therealadityashankar/replicate2runpod/main/runpod_infer.py
 wget https://raw.githubusercontent.com/therealadityashankar/replicate2runpod/main/test_input.json
 python -m cog.server.http &
