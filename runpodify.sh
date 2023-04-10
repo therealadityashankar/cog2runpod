@@ -1,7 +1,7 @@
 pip install runpod
 
-wget .../runpod_infer.py
-wget .../test_input.json
+wget https://raw.githubusercontent.com/therealadityashankar/replicate2runpod/main/runpod_infer.py
+wget https://raw.githubusercontent.com/therealadityashankar/replicate2runpod/main/test_input.json
 
 python -m cog.server.http &
 python runpod_infer.py
