@@ -1,3 +1,5 @@
 {
-    "input" : "an image of a vegetable"
+    "input" : {
+        "test" : "an image of a vegetable"
+    }
 }
