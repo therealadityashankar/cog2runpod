@@ -19,7 +19,8 @@ def handler(event):
     output = requests.post("http://localhost:5000/predictions", json={
         "input" : event['input']
     }).json()
-        
+    print(output)
+    time.sleep(15)
     return output
 
 
