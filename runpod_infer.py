@@ -8,6 +8,7 @@ import mimetypes
 import tempfile
 from runpod.serverless.utils import rp_upload
 import base64
+import os
    
 def check_socket(host, port):
     with closing(socket.socket(socket.AF_INET, socket.SOCK_STREAM)) as sock:
@@ -30,7 +31,7 @@ def upload_base64(val : str, job):
 
     with tempfile.NamedTemporaryFile(suffix=extension) as fp:
         fp.write(data)
-        url = rp_upload.upload_image(job['id'], fp.name)
+        url = rp_upload.upload_file_to_bucket(job['id']+extension, fp.name)
 
     return url
 
